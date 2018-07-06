@@ -1,0 +1,16 @@
+<div  *ngIf="book" class="container">
+  <h3>{{ book.title }}</h3>
+<div class="">
+    {{ book.author }}
+</div>
+<div class="">
+    {{ book.nbPages }} Pages
+</div>
+<div class="">
+  Paru en  {{ book.publicationDate }}
+</div>
+<div class="">
+    Emprunté {{ book.nbRent }} fois
+</div>
+
+</div>

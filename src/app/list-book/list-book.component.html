@@ -1,0 +1,25 @@
+
+<h2>Livres</h2>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+<!--<ul *ngFor="let book of books">
+  <li> <a routerLink="/books/{{book.id}}">{{book.title}}</a> {{book.available}} </li>
+</ul>-->
+
+    <table class="table table-bordered table-striped">
+
+     <tr *ngFor="let book of books" class="table-row" scope="row">
+
+       <td>
+        <a routerLink="/books/{{book.id}}">{{book.title}}</a>
+       </td>
+       <td>
+         {{book.available}}
+       </td>
+     </tr>
+   </table>
+  </div>
+  </div>
+</div>
